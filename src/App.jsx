@@ -13,9 +13,9 @@ import Faqs from './components/Faqs'
 
 export const App = () => {
   return (
-    <>
+    <div className='px-6'>
     <Navbar />
-    <div className="max-w-7xl mx-auto pt-20 px-6">
+    <div className="max-w-7xl mx-auto pt-20 mt-20 lg:mt-20 mb-10">
       <HeroSection />
       <AboutUs />
       <Services />
@@ -27,7 +27,7 @@ export const App = () => {
       <Faqs />
       <Footer />
     </div>
-  </>
+  </div>
   )
 }
 export default App

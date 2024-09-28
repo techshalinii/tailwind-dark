@@ -31,9 +31,9 @@ const Contact = () => {
   };
 
     return (
-        <section className="flex justify-center items-center min-h-[100vh]">
-          <form onSubmit={onSubmit} className='max-w-[600px] w-full p-6 shadow-lg text-black m-6 bg-blue-200 rounded-lg'>
-              <h2 className='text-4xl text-blue-700 text-center'>Contact Form</h2>
+        <section className="flex justify-center items-center">
+          <form onSubmit={onSubmit} className='max-w-[600px] w-full p-6 shadow-lg  mt-6 mb-6 bg-neutral-900  rounded-lg'>
+              <h2 className='text-2xl sm:text-3xl lg:text-5xl text-white text-center font-semibold'>Contact Us</h2>
               <div className='mt-10'>
                   <label>Full Name</label>
                   <input type="text" className='w-full h-2/3 transparent border-white rounded-sm p-4 rounded-sm' placeholder='Enter your name'  name='name' required/>
@@ -46,7 +46,7 @@ const Contact = () => {
                   <label>Your Message</label>
                   <textarea  name="message" className='h-[100px] w-full  resize-none rounded-sm' placeholder='Enter your message' required ></textarea>
                </div>
-               <button type='submit' className='mt-6 w-full h-[55px] bg-blue-800 rounded-lg shadow-sm cursor-pointer hover:bg-blue-900 text-white '>Send Message</button>
+               <button type='submit' className='mt-6 w-full h-[55px] bg-neutral-900 rounded-lg shadow-sm cursor-pointer hover:bg-neutral-700 text-white '>Send Message</button>
           </form>
         </section>
     )
