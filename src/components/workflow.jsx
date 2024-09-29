@@ -31,7 +31,7 @@ const Workflow = () => {
           <img 
             src={image} 
             alt="Image" 
-            className=" h-auto h-[300px] object-contain"
+            className="max-h-full h-auto lg:h-[300px] object-contain sm:h-[300px]"
           />
         </div>
       </div>
