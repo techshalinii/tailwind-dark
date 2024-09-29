@@ -8,3 +8,7 @@
   color-scheme: dark;
   
 }
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 40px;
+}

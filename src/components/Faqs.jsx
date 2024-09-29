@@ -10,18 +10,18 @@ const Faqs = () => {
   };
 
   return (
-    <div id='Faqs' className="flex flex-col justify-center mb-10 items-center min-h-[400px] mt-10">
-      <h2 className="text-2xl sm:text-3xl lg:text-5xl text-center mt-0 my-10 lg:my-10 font-bold">
+    <div id='Faqs' className="flex flex-col justify-center items-center mb-10 lg:mb-20 pt-4 pb-4">
+      <h2 className="text-2xl sm:text-3xl lg:text-5xl text-center mt-0  font-bold my-10 lg:my-20">
         
         <span className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text"> 
         FAQs
             </span>
       </h2>
-      <div className="grid grid-cols-1 gap-2 w-full sm:w-3/4 lg:w-1/2 sm:gap-4 mx-auto">
+      <div className="grid grid-cols-1  w-full sm:w-3/4 lg:w-1/2 mx-auto gap-2 sm:gap-4">
         {faqs.map((item, index) => (
           <div key={index} className="group rounded border border-neutral-700 bg-neutral-900 p-2 shadow-md">
             <dt className="flex justify-between items-center">
-              <p className="font-semibold text-sm ">{item.question}</p>
+              <p className="font-semibold text-sm">{item.question}</p>
               <button onClick={() => toggleFaq(index)}>
                 {openIndex === index ? (
                   <ChevronUp className="w-6 h-6 text-orange-700" />
