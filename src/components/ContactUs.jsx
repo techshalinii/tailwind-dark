@@ -31,8 +31,8 @@ const ContactUs = () => {
   };
 
   return (
-    <div id='ContactUs' className="relative flex flex-col items-center pt-4 pb-4">
-      <div className=" text-center">{/* mb-10 */}
+    <div id='ContactUs' className="relative flex flex-col items-center p-4">
+      <div className=" text-center">
         <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold my-10 lg:my-20">
           Contact
           <span className="bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">
@@ -88,7 +88,7 @@ const ContactUs = () => {
                 <label className="block text-white">Your Message</label>
                 <textarea
                   name="message"
-                  className='w-full h-[100px] rounded-sm p-4 mt-2 resize-none'
+                  className='w-full h-[100px] rounded-sm p-4 mt-2 '
                   placeholder='Enter your message'
                   required
                 ></textarea>
