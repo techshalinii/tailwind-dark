@@ -4,7 +4,7 @@ import React from 'react';
 
 const Workflow = () => {
   return (
-    <div className="container mx-auto pt-4 pb-4 ">
+    <div className="container mx-auto pt-4 pb-4">
       <h2 className="text-2xl sm:text-3xl lg:text-5xl text-center tracking-wide font-bold my-10 lg:my-20">
         How it 
         <span className="bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">
@@ -27,11 +27,11 @@ const Workflow = () => {
             </div>
           ))}
         </div>
-        <div className="w-full lg:w-1/2 flex justify-center items-start">
+        <div className="w-1/2 flex justify-center items-start pt-4">
           <img 
             src={image} 
             alt="Image" 
-            className="max-h-full h-auto lg:h-[300px] object-contain sm:h-[300px]"
+            className="max-h-full h-auto lg:h-[300px] !sm:h-[150px] md:h-[300px] object-contain"
           />
         </div>
       </div>

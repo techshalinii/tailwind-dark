@@ -10,6 +10,9 @@ const Navbar = () => {
     const toggleNavbar = () => {
         setMobileDrawerOpen(!mobileDraverOpen);
     }
+    const closeDrawer = () => {
+        setMobileDrawerOpen(false);
+    }
 
   return (
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80 p-4">
@@ -47,7 +50,7 @@ const Navbar = () => {
                     <ul>
                         {navItems.map((item, index) => (
                             <li key={index} className="py-4">
-                                <a href={item.href}>{item.label}</a>
+                                <a href={item.href} onClick={closeDrawer} >{item.label}</a>
                             </li>
                         ))}
                     </ul>

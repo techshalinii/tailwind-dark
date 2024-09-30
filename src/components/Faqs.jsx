@@ -10,8 +10,8 @@ const Faqs = () => {
   };
 
   return (
-    <div id='Faqs' className="flex flex-col justify-center items-center mb-10 lg:mb-20 pt-4 pb-4">
-      <h2 className="text-2xl sm:text-3xl lg:text-5xl text-center mt-0  font-bold my-10 lg:my-20">
+    <div id='Faqs' className="flex flex-col justify-center items-center mb-20 lg:mb-20 pt-4 pb-4">
+      <h2 className="text-2xl sm:text-3xl lg:text-5xl text-center  sm:mt-10  font-bold my-10 lg:my-20">
         
         <span className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text"> 
         FAQs
