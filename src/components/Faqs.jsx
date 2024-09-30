@@ -21,7 +21,7 @@ const Faqs = () => {
         {faqs.map((item, index) => (
           <div key={index} className="group rounded border border-neutral-700 bg-neutral-900 p-2 shadow-md">
             <dt className="flex justify-between items-center">
-              <p className="font-semibold text-sm">{item.question}</p>
+              <p className="text-sm text-neutral-200">{item.question}</p>
               <button onClick={() => toggleFaq(index)}>
                 {openIndex === index ? (
                   <ChevronUp className="w-6 h-6 text-orange-700" />
