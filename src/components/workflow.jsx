@@ -13,7 +13,7 @@ const Workflow = () => {
       </h2>
       
       <div className="flex flex-wrap justify-center items-start mt-8">
-        <div className="w-full lg:w-1/2 flex flex-col justify-center">
+        <div className="w-full lg:w-1/2 md:w-1/2 flex flex-col justify-center">
           {checklistItems.map((item, index) => (
             <div key={index} className="flex items-start">
               <div className="ml-4">
