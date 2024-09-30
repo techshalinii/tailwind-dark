@@ -20,7 +20,7 @@ const Faqs = () => {
       <div className="grid grid-cols-1  w-full sm:w-3/4 lg:w-1/2 mx-auto gap-2 px-4 sm:gap-4">
         {faqs.map((item, index) => (
           <div key={index} className="group rounded border border-neutral-700 bg-neutral-900 p-2 shadow-md">
-            <dt className="flex justify-between items-center">
+            <dt onClick={() => toggleFaq(index)} className="flex justify-between items-center">
               <p className="text-sm text-neutral-200">{item.question}</p>
               <button onClick={() => toggleFaq(index)}>
                 {openIndex === index ? (
@@ -31,7 +31,7 @@ const Faqs = () => {
               </button>
             </dt>
             {openIndex === index && (
-              <dd className="mt-2 text-neutral-500">
+              <dd className="mt-2 text-neutral-400 text-sm">
                 <p>{item.answer}</p>
               </dd>
             )}
